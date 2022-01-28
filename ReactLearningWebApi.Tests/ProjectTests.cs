@@ -1,13 +1,33 @@
-﻿using Xunit;
+﻿using Microsoft.AspNetCore.Mvc;
+using ReactLearningWebApi;
+using Xunit;
 
 namespace ReactLearningWebApi.Tests
 {
     public class ProjectTests
     {
-        [Fact]
-        public void Test1()
+        private readonly ProjectController projectController;
+
+        public ProjectTests()
         {
-            Assert.True(true);
+            projectController = new ProjectController();
+        }
+
+
+        [Fact]
+        public void AddingProject_ReturnsOK()
+        {
+            //Arrange
+            var dto = new AddProjectDTO { Name = "UT project name", Description = "UT project description" };
+
+            //Act
+            var result=projectController.Add(dto);
+
+            //Assert
+            Assert.IsType<OkResult>(result);
+            var r = (OkResult)result;
+
+
         }
     }
 }

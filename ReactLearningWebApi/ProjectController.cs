@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ReactLearningWebApi.Controllers
+namespace ReactLearningWebApi
 {
     [ApiController]
     [Route("api/project")]
     public class ProjectController : Controller
     {
         [HttpPost]
-        public IActionResult AddProject()
+        public IActionResult Add(AddProjectDTO dto)
         {
-            return View();
+            return new OkResult();
         }
     }
 }
