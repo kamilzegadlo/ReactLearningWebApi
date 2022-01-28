@@ -1,0 +1,19 @@
+1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stworzenia przy uzyciu entity frameworka
+2. dodanie api do pobierania wszystkich rekordow dla grida - idki i tytuly
+3. dodanie api do pobierania szczegolow jednego projektu - wszystkie pola
+4. api do edycji
+5. api do usuwania
+----
+6. dodanie ekranu w reakcie do wyswietlenia grida z wszysktimi projektami 
+7. dodanie ekranu do dodawania rekordow
+8. dodanie ekranu do szczegolow/edycji/usuwania
+9. introduce typescript
+10. introduce redux
+----
+11. dodanie autentykacji i autoryzacji
+----
+12. devopsy dla projektu
+13. testy e2e
+
+
+
