@@ -1,4 +1,8 @@
-1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stworzenia przy uzyciu entity frameworka
+DONE 0. Zainstalowanie softu na maszynie
+----
+DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stworzenia przy uzyciu entity frameworka
+	1a. DIC in unit tests
+	1b. more generic registration of DIC
 2. dodanie api do pobierania wszystkich rekordow dla grida - idki i tytuly
 3. dodanie api do pobierania szczegolow jednego projektu - wszystkie pola
 4. api do edycji
@@ -15,8 +19,12 @@
 12. Dodanie dockera
 13. dodanie kubernetees
 ----
-14. devopsy dla projektu
-15. testy e2e
+14. pomyslec o zmianach jakby to bylo DDD
+----
+15. devopsy dla projektu
+16. testy e2e
 
 
 
+sweitne o unit testach z entity:
+https://dejanstojanovic.net/aspnet/2021/january/mocking-view-mapped-dbsets-with-xunit-in-ef-core/#:~:text=Using%20in-memory%20DbContext%20is%20a%20great%20way%20to,you%20are%20mapping%20database%20view%20to%20an%20entity.

@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using ReactLearningWebApi.Domain;
+using ReactLearningWebApi.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<DbAppRepositoryContext>(
+        options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("ReactLearningWebApi.Repositories")));
+
+builder.Services.AddScoped<IRepository<ProjectEntity>, ProjectRepository>();
+builder.Services.AddScoped<IProjectService, ProjectService>();
 
 var app = builder.Build();
 
