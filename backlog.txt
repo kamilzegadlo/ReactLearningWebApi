@@ -3,6 +3,7 @@ DONE 0. Zainstalowanie softu na maszynie
 DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stworzenia przy uzyciu entity frameworka
 	1a. DIC in unit tests
 	1b. more generic registration of DIC
+DONE	1c. scoped because of dbcontext...
 2. dodanie api do pobierania wszystkich rekordow dla grida - idki i tytuly
 3. dodanie api do pobierania szczegolow jednego projektu - wszystkie pola
 4. api do edycji

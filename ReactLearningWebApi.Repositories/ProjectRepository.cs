@@ -5,13 +5,11 @@ namespace ReactLearningWebApi.Repositories
 {
     public class ProjectRepository : IRepository<ProjectEntity>
     {
-        private DbAppRepositoryContext context { get; }
-        private readonly DbSet<Project> dbSet;
+        private readonly IDBContextFactory contextFactory;
 
-        public ProjectRepository(DbAppRepositoryContext context)
+        public ProjectRepository(IDBContextFactory contextFactory)
         {
-            this.context = context;
-            dbSet = context.Set<Project>();
+            this.contextFactory = contextFactory;
         }
 
         public async Task<IEnumerable<ProjectEntity>> AllAsync()
@@ -29,14 +27,17 @@ namespace ReactLearningWebApi.Repositories
             throw new NotImplementedException();
         }
 
-        private async Task<Project> FindDbEntityById(IComparable id)
+        private async Task<Project> FindDbEntityById(DbSet<Project> dbSet, IComparable id)
         {
             return await dbSet.SingleOrDefaultAsync(e => e.Id == id);
         }
 
         public async Task SaveAsync(ProjectEntity item)
         {
-            var p = await FindDbEntityById(item.Id);
+            var context = contextFactory.Get();
+            var dbSet = context.Set<Project>();
+
+            var p = await FindDbEntityById(dbSet, item.Id);
 
             if (p == null)
             {

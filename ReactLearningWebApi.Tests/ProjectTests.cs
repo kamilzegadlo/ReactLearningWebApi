@@ -11,8 +11,10 @@ namespace ReactLearningWebApi.Tests
 {
     public class ProjectTests
     {
-        private readonly ProjectController projectController;
         private readonly DbAppRepositoryContext dbContext;
+        private readonly IDBContextFactory contextFactory;
+
+        private readonly ProjectController projectController;
 
         public ProjectTests()
         {
@@ -21,7 +23,10 @@ namespace ReactLearningWebApi.Tests
                  .Options;
             dbContext = new DbAppRepositoryContext(options);
 
-            var r = new ProjectRepository(dbContext);
+            contextFactory=A.Fake<IDBContextFactory>();
+            A.CallTo(() => contextFactory.Get()).Returns(dbContext);
+
+            var r = new ProjectRepository(contextFactory);
             var s = new ProjectService(r);
 
             projectController = new ProjectController(s);

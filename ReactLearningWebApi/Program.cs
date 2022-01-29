@@ -14,8 +14,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DbAppRepositoryContext>(
         options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection", b => b.MigrationsAssembly("ReactLearningWebApi.Repositories")));
 
-builder.Services.AddScoped<IRepository<ProjectEntity>, ProjectRepository>();
-builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddSingleton<IDBContextFactory, DBContextFactory>();
+builder.Services.AddSingleton<IRepository<ProjectEntity>, ProjectRepository>();
+builder.Services.AddSingleton<IProjectService, ProjectService>();
 
 var app = builder.Build();
 
