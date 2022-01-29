@@ -6,30 +6,23 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ReactLearningWebApi.Repositories;
 using ReactLearningWebApi.Domain;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ReactLearningWebApi.Tests
 {
     public class ProjectTests
     {
-        private readonly DbAppRepositoryContext dbContext;
-        private readonly IDBContextFactory contextFactory;
+        private readonly DIInstaller installer;
 
         private readonly ProjectController projectController;
 
         public ProjectTests()
         {
-            var options = new DbContextOptionsBuilder<DbAppRepositoryContext>()
-                 .UseInMemoryDatabase("InMemoryDb")
-                 .Options;
-            dbContext = new DbAppRepositoryContext(options);
+            installer = new DIInstaller();
+            var DICservices = installer.Services();
+            installer.DoubleDatabase(DICservices);
 
-            contextFactory=A.Fake<IDBContextFactory>();
-            A.CallTo(() => contextFactory.Get()).Returns(dbContext);
-
-            var r = new ProjectRepository(contextFactory);
-            var s = new ProjectService(r);
-
-            projectController = new ProjectController(s);
+            projectController = DICservices.BuildServiceProvider().GetRequiredService<ProjectController>();
         }
 
         [Fact]
@@ -55,7 +48,7 @@ namespace ReactLearningWebApi.Tests
             var result = await projectController.AddAsync(dto);
 
             //Assert
-            var r = dbContext.Set<Project>().Single();
+            var r = installer.dbContext.Set<Project>().Single();
             Assert.Equal("UT project name", r.Name);
             Assert.Equal("UT project description", r.Description);
         }
