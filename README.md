@@ -1,11 +1,11 @@
 # ReactLearningWebApi
 
-A simple project to learn React.
+A simple project to learn React. <br/><br/>
 
-Approach:
--> Detroit school of unit tests instead of London one.
--> TDD
--> Learn entity framework
--> docker and kubernetes
--> redux
--> DDD
+Approach:<br/>
+-> Detroit school of unit tests instead of London one.<br/>
+-> TDD<br/>
+-> Learn entity framework<br/>
+-> docker and kubernetes<br/>
+-> redux<br/>
+-> DDD<br/>
