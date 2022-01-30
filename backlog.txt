@@ -8,9 +8,6 @@ DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stw
 ----
 6. dodanie ekranu w reakcie do wyswietlenia grida z wszysktimi projektami 
 7. dodanie ekranu do dodawania rekordow
-		b) display simple form
-		c) send it to web api
-		d) unit tests
 8. dodanie ekranu do szczegolow/edycji/usuwania
 9. introduce typescript
 10. introduce redux
