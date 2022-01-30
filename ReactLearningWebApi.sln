@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Repositories", "ReactLearningWebApi.Repositories\ReactLearningWebApi.Repositories.csproj", "{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Core", "ReactLearningWebApi.Core\ReactLearningWebApi.Core.csproj", "{BD33A52E-ED98-412C-A9AC-21262178A6E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

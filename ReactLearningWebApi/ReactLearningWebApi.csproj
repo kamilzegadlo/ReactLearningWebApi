@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ReactLearningWebApi.Core\ReactLearningWebApi.Core.csproj" />
     <ProjectReference Include="..\ReactLearningWebApi.Domain\ReactLearningWebApi.Domain.csproj" />
     <ProjectReference Include="..\ReactLearningWebApi.Repositories\ReactLearningWebApi.Repositories.csproj" />
   </ItemGroup>

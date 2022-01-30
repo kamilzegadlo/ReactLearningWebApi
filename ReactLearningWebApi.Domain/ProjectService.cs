@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReactLearningWebApi.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReactLearningWebApi.Domain
 {
+    [Injectable]
     public  class ProjectService : IProjectService
     {
         private readonly IRepository<ProjectEntity> projectRepository;

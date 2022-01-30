@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ReactLearningWebApi.Core;
 using ReactLearningWebApi.Domain;
 
 namespace ReactLearningWebApi.Repositories
 {
+    [Injectable]
     public class ProjectRepository : IRepository<ProjectEntity>
     {
         private readonly IDBContextFactory contextFactory;

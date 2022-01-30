@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReactLearningWebApi.Domain
+namespace ReactLearningWebApi.Core
 {
     public interface IRepository<T> where T : IStoreable
     {
