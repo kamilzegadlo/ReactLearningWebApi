@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactLearningWebApi", "Reac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactLearningWebApi.Tests", "ReactLearningWebApi.Tests\ReactLearningWebApi.Tests.csproj", "{F6E7B49C-6596-4541-8EAD-42331A42B2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Domain", "ReactLearningWebApi.Domain\ReactLearningWebApi.Domain.csproj", "{A64C9252-1377-44EF-BAF4-9E2D9AEEA686}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactLearningWebApi.Domain", "ReactLearningWebApi.Domain\ReactLearningWebApi.Domain.csproj", "{A64C9252-1377-44EF-BAF4-9E2D9AEEA686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Repositories", "ReactLearningWebApi.Repositories\ReactLearningWebApi.Repositories.csproj", "{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactLearningWebApi.Repositories", "ReactLearningWebApi.Repositories\ReactLearningWebApi.Repositories.csproj", "{CC74FCF6-AF0E-4E46-9CB4-CD839BAE735D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearningWebApi.Core", "ReactLearningWebApi.Core\ReactLearningWebApi.Core.csproj", "{BD33A52E-ED98-412C-A9AC-21262178A6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactLearningWebApi.Core", "ReactLearningWebApi.Core\ReactLearningWebApi.Core.csproj", "{BD33A52E-ED98-412C-A9AC-21262178A6E1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ReactLearningFrontEnd", "ReactLearningFrontEnd\ReactLearningFrontEnd.esproj", "{29B239AD-E89F-4709-A086-E71EC32476D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,12 @@ Global
 		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD33A52E-ED98-412C-A9AC-21262178A6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B239AD-E89F-4709-A086-E71EC32476D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

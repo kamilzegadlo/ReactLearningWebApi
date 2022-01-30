@@ -1,7 +1,6 @@
 DONE 0. Zainstalowanie softu na maszynie
 ----
 DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stworzenia przy uzyciu entity frameworka
-	1b. more generic registration of DIC
 2. dodanie api do pobierania wszystkich rekordow dla grida - idki i tytuly
 3. dodanie api do pobierania szczegolow jednego projektu - wszystkie pola
 4. api do edycji
@@ -9,6 +8,9 @@ DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stw
 ----
 6. dodanie ekranu w reakcie do wyswietlenia grida z wszysktimi projektami 
 7. dodanie ekranu do dodawania rekordow
+		b) display simple form
+		c) send it to web api
+		d) unit tests
 8. dodanie ekranu do szczegolow/edycji/usuwania
 9. introduce typescript
 10. introduce redux
@@ -25,5 +27,3 @@ DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stw
 
 
 
-sweitne o unit testach z entity:
-https://dejanstojanovic.net/aspnet/2021/january/mocking-view-mapped-dbsets-with-xunit-in-ef-core/#:~:text=Using%20in-memory%20DbContext%20is%20a%20great%20way%20to,you%20are%20mapping%20database%20view%20to%20an%20entity.
