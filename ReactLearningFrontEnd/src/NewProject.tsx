@@ -24,7 +24,6 @@ class NewProject extends React.Component<any, NewProjectState> {
     }
 
     handleSubmit(event: any) {
-        alert('A name was submitted: ' + this.state.Name);
         event.preventDefault();
 
         let projectInfo = {
@@ -38,7 +37,6 @@ class NewProject extends React.Component<any, NewProjectState> {
             body: JSON.stringify(projectInfo),
         }).then(r => r.json()).then(res => {
             if (res) {
-                alert('Sent!');
             }
         });
     }
@@ -55,7 +53,7 @@ class NewProject extends React.Component<any, NewProjectState> {
                 </label><br />
                 <label>
                     Description:
-                    <textarea name="name" value={this.state.Description} onChange={this.handleDescChange} />
+                    <textarea name="description" value={this.state.Description} onChange={this.handleDescChange} />
                 </label><br />
                 <input type="submit" value="Submit" />
             </form>

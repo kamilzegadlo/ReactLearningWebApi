@@ -7,7 +7,7 @@ DONE 1. stworzenie api do dodawanie rekordow - projektow - nazwa, opis, czas stw
 5. api do usuwania
 ----
 6. dodanie ekranu w reakcie do wyswietlenia grida z wszysktimi projektami 
-7. dodanie ekranu do dodawania rekordow
+DONE 7. dodanie ekranu do dodawania rekordow
 8. dodanie ekranu do szczegolow/edycji/usuwania
 9. introduce typescript
 10. introduce redux
